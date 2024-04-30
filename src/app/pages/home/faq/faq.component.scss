@@ -1,0 +1,271 @@
+.background-div {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 110vh; 
+    margin-top: 505px; 
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 80%;
+    max-width: 1200px; 
+}
+
+
+.FAQ{
+    display: flex;
+    flex-direction: column; 
+    align-items: self-start;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.FAQ h1{
+    font-size: 50px; 
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.FAQ p{
+    font-size: 20px; 
+    color: #888484;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    max-width: 90%;
+}
+
+.FAQ h2{
+    font-size: 15px; 
+    color: #100d0d;
+    margin-bottom: 1px;
+}
+
+.FAQ h2:hover{
+    text-decoration: underline;
+}
+
+
+.FAQ-inner-divs{
+    display: flex;
+    align-items: self-start;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.1px solid #888484;
+    padding-bottom: 10px; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.FAQ-inner-divs img{
+    width: 2.5%;
+    margin-left: auto; // responsively placing icon eastward
+}
+
+.FAQ-inner-divs:hover{
+    cursor: pointer;
+}
+
+
+.enrollment-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.enrollment-content h1 {
+    font-size: 50px; 
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+
+.enrollment-content p {
+    font-size: 20px; 
+    color: #888484;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    max-width: 90%;
+}
+
+
+
+.short-enrollment-encouragement {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%; 
+    max-width: 800px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-container{ 
+    display: flex;
+    // flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.short-button-one,
+.short-button-two {
+    padding: 18px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.short-button-one {
+    background-color: #000000;
+    color: #fff;
+    
+}
+
+.short-button-two {
+    background-color: #f3f7fb;
+    border: 0.1px solid #ccc;
+
+}
+
+.short-button-one:hover {
+    background-color: #221e1e;
+}
+
+.short-button-two:hover {
+    background-color: rgb(239, 245, 249);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: #ccc;
+    opacity: 0.8;
+}
+
+.large-image {
+    height: auto;
+    margin-top: 20px;
+}
+
+
+
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+  }
+  
+  .footer nav {
+    margin: 10px auto;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer ul li {
+    margin: 10px;
+  }
+  
+  .footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer p {
+    font-size: 12px;
+  }
+
+  .footer a:hover{
+    text-decoration: underline;
+  }
+  
+  .footer img {
+    width: 20px;
+    margin: 2px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .footer {
+      position: fixed;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .footer ul li {
+      margin: 5px;
+    }
+  
+    .footer img {
+      width: 15px;
+      margin: 1px;
+    }
+  }
+
+
+@media screen and (max-width: 767px) {
+    .footer {
+      position: fixed;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .footer ul li {
+      margin: 5px;
+    }
+  
+    .footer img {
+      width: 15px;
+      margin: 1px;
+    }
+  }
+  
+
+
+
+@media screen and (max-width: 1999px) {
+    .main {
+        width: 90%; 
+    }
+    .description,
+    .offers,
+    .enrollment-encouragement,
+    .results,
+    .mentors,
+    .students,
+    .short-enrollment-encouragement {
+        max-width: 100%; 
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        width: 120%; 
+    }
+}
