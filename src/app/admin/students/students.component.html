@@ -1,0 +1,23 @@
+<p>students works!</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        hellhcuewewfeuwcf
+    </h1>
+    <div class="carousel">
+        <div class="slide" *ngFor="let image of images">
+          <img [src]="image.url" alt="{{image.alt}}">
+        </div>
+        <button (click)="prev()" class="prev">&#10094;</button>
+        <button (click)="next()" class="next">&#10095;</button>
+      </div>
+    
+</body>
+</html>
