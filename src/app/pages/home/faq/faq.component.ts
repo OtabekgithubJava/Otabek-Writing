@@ -3,8 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-faq',
   templateUrl: './faq.component.html',
-  styleUrl: './faq.component.scss'
+  styleUrls: ['./faq.component.scss']
 })
 export class FAQComponent {
-
+  enable(answerId: string) {
+    const answer = document.getElementById(answerId);
+    if (answer) {
+      answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+    }
+  }
 }

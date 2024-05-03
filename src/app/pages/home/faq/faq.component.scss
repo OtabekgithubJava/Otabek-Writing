@@ -3,7 +3,7 @@
     justify-content: center; 
     align-items: center; 
     height: 110vh; 
-    margin-top: 505px; 
+    margin-top: 475px; 
 }
 
 .main {
@@ -51,25 +51,47 @@
 
 
 .FAQ-inner-divs{
+  cursor: pointer;
     display: flex;
     align-items: self-start;
     margin-top: 15px;
     width: 100%;
+    flex-direction: column;
     text-align: center;
     border-bottom: 0.1px solid #888484;
     padding-bottom: 10px; 
-    flex-direction: row; 
+    // flex-direction: row; 
     justify-content: space-between; 
-    align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
 }
 
 .FAQ-inner-divs img{
     width: 2.5%;
     margin-left: auto; // responsively placing icon eastward
+    margin-right: 20px; 
 }
 
-.FAQ-inner-divs:hover{
-    cursor: pointer;
+
+
+
+.FAQ-inner-divs h2 {
+    font-size: 15px;
+    color: #100d0d;
+    margin-bottom: 1px;
+ }
+  
+ .answer {
+  display: none;
+  // font-size: 1px;
+  // margin-top: 10px; 
+  color: #888484;
+  font-weight: bolder; 
+  margin-left: auto;
 }
 
 
@@ -209,6 +231,25 @@
     width: 20px;
     margin: 2px;
   }
+
+
+  @media screen and (max-width: 767px) {
+    .FAQ-inner-divs {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+  @media screen and (max-width: 1999px) {
+      /* Adjustments for larger screens */
+  }
+
+  @media screen and (min-width: 1200px) {
+      /* Adjustments for screens wider than 1200px */
+  }
+
+
   
   @media screen and (max-width: 767px) {
     .footer {
